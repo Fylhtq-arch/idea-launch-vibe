@@ -66,6 +66,9 @@
   --color-neon: var(--neon);
   --color-cta-orange: var(--cta-orange);
   --color-cta-green: var(--cta-green);
+  --color-lilac: var(--lilac);
+  --color-lilac-muted: var(--lilac-muted);
+
   --font-display: "Manrope", ui-sans-serif, system-ui, sans-serif;
 }
 
@@ -115,7 +118,10 @@
   --neon: oklch(0.82 0.13 220);
   --cta-orange: oklch(0.72 0.18 55);
   --cta-green: oklch(0.75 0.18 155);
+  --lilac: oklch(0.8 0.13 305);
+  --lilac-muted: oklch(0.72 0.09 305);
 }
+
 
 
 .dark {
