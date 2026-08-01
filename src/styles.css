@@ -66,6 +66,9 @@
   --color-neon: var(--neon);
   --color-cta-orange: var(--cta-orange);
   --color-cta-green: var(--cta-green);
+  --color-lilac: var(--lilac);
+  --color-lilac-muted: var(--lilac-muted);
+
   --font-display: "Manrope", ui-sans-serif, system-ui, sans-serif;
 }
 
