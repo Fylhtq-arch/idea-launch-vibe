@@ -24,29 +24,31 @@ export function HeroDashboard() {
         />
         <div className="hero-image-veil pointer-events-none absolute inset-0" />
 
-        <div className="absolute inset-0 flex flex-col items-center justify-center px-4 text-center sm:px-8">
-          <h1 className="hero-text-red text-2xl font-extrabold leading-[1.1] tracking-tight sm:text-4xl lg:text-5xl">
-            Развитие бизнеса с помощью ИИ
-          </h1>
+        <div className="absolute inset-0 flex flex-col items-center justify-center px-4 py-8 text-center sm:px-8">
+          <div className="hero-text-backdrop max-w-3xl rounded-2xl px-5 py-6 sm:px-10 sm:py-8">
+            <h1 className="hero-text-red text-3xl font-extrabold leading-[1.05] tracking-tight sm:text-4xl md:text-5xl lg:text-6xl">
+              Развитие бизнеса с помощью ИИ
+            </h1>
 
-          <p className="hero-text-red mx-auto mt-4 max-w-xl text-sm font-semibold leading-relaxed sm:text-base">
-            Быстро и надежно с помощью ИИ делаем старт и развитие любых идей
-            бизнеса
-          </p>
+            <p className="hero-text-red mx-auto mt-5 max-w-2xl text-base font-semibold leading-relaxed sm:text-lg md:text-xl">
+              Быстро и надежно с помощью ИИ делаем старт и развитие любых идей
+              бизнеса
+            </p>
 
-          <div className="mt-7 flex w-full flex-col gap-3 sm:w-auto sm:flex-row sm:justify-center">
-            <a
-              href="#projects"
-              className="hero-btn-orange inline-flex w-full items-center justify-center rounded-xl px-6 py-3.5 text-base font-semibold sm:w-auto"
-            >
-              Посмотреть проекты
-            </a>
-            <a
-              href="#contact"
-              className="hero-btn-green inline-flex w-full items-center justify-center rounded-xl px-6 py-3.5 text-base font-semibold sm:w-auto"
-            >
-              Связаться
-            </a>
+            <div className="mt-8 flex w-full flex-col gap-3 sm:w-auto sm:flex-row sm:justify-center">
+              <a
+                href="#projects"
+                className="hero-btn-orange inline-flex w-full items-center justify-center rounded-xl px-6 py-3.5 text-base font-semibold sm:w-auto"
+              >
+                Посмотреть проекты
+              </a>
+              <a
+                href="#contact"
+                className="hero-btn-green inline-flex w-full items-center justify-center rounded-xl px-6 py-3.5 text-base font-semibold sm:w-auto"
+              >
+                Связаться
+              </a>
+            </div>
           </div>
         </div>
       </div>
