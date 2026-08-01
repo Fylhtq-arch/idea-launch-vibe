@@ -120,6 +120,8 @@
   --cta-green: oklch(0.75 0.18 155);
   --lilac: oklch(0.8 0.13 305);
   --lilac-muted: oklch(0.72 0.09 305);
+  --hero-red: oklch(0.62 0.24 25);
+
 }
 
 
