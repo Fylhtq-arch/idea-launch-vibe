@@ -1,3 +1,5 @@
+import heroImage from "@/assets/hero-ai.jpg";
+
 const metrics = [
   { label: "Запущено проектов", value: "48", delta: "+12%" },
   { label: "Средний срок MVP", value: "9 дней", delta: "-40%" },
@@ -12,50 +14,40 @@ export function HeroDashboard() {
     <div className="hero-glass relative w-full rounded-3xl p-4 sm:p-6 lg:p-8">
       <div className="hero-glow-ring pointer-events-none absolute inset-0 rounded-3xl" />
 
-      {/* header bar */}
-      <div className="relative grid grid-cols-[minmax(0,1fr)_auto] items-center gap-3">
-        <div className="flex min-w-0 items-center gap-3">
-          <span className="hero-pulse h-2.5 w-2.5 shrink-0 rounded-full bg-cta-green" />
-          <p className="truncate text-sm font-semibold text-lilac">
-            AI Delivery Board
+      {/* картинка с наложенным текстом */}
+      <div className="relative overflow-hidden rounded-2xl border border-hero-border">
+        <img
+          src={heroImage}
+          alt="Девушка и светящийся искусственный интеллект"
+          className="h-[26rem] w-full object-cover sm:h-[30rem]"
+          loading="eager"
+        />
+        <div className="hero-image-veil pointer-events-none absolute inset-0" />
+
+        <div className="absolute inset-0 flex flex-col items-center justify-center px-4 text-center sm:px-8">
+          <h1 className="hero-text-red text-2xl font-extrabold leading-[1.1] tracking-tight sm:text-4xl lg:text-5xl">
+            Развитие бизнеса с помощью ИИ
+          </h1>
+
+          <p className="hero-text-red mx-auto mt-4 max-w-xl text-sm font-semibold leading-relaxed sm:text-base">
+            Быстро и надежно с помощью ИИ делаем старт и развитие любых идей
+            бизнеса
           </p>
-        </div>
-        <div className="flex shrink-0 gap-1.5">
-          <span className="h-2.5 w-2.5 rounded-full bg-neon/70" />
-          <span className="h-2.5 w-2.5 rounded-full bg-cta-orange/70" />
-          <span className="h-2.5 w-2.5 rounded-full bg-hero-muted/60" />
-        </div>
-      </div>
 
-      {/* content inside the picture */}
-      <div className="relative mt-6 text-center">
-        <span className="inline-flex items-center gap-2 rounded-full border border-hero-border bg-hero-panel/60 px-3 py-1 text-xs text-lilac">
-          <span className="hero-pulse h-1.5 w-1.5 rounded-full bg-lilac" />
-          Вайбкодинг · AI-разработка
-        </span>
-
-        <h1 className="mt-5 text-3xl font-extrabold leading-[1.1] tracking-tight text-lilac sm:text-4xl lg:text-5xl">
-          Развитие бизнеса с помощью ИИ
-        </h1>
-
-        <p className="mx-auto mt-4 max-w-xl text-sm leading-relaxed text-lilac-muted sm:text-base">
-          Быстро и надежно с помощью ИИ делаем старт и развитие любых идей
-          бизнеса
-        </p>
-
-        <div className="mt-7 flex flex-col gap-3 sm:flex-row sm:justify-center">
-          <a
-            href="#projects"
-            className="hero-btn-orange inline-flex w-full items-center justify-center rounded-xl px-6 py-3.5 text-base font-semibold sm:w-auto"
-          >
-            Посмотреть проекты
-          </a>
-          <a
-            href="#contact"
-            className="hero-btn-green inline-flex w-full items-center justify-center rounded-xl px-6 py-3.5 text-base font-semibold sm:w-auto"
-          >
-            Связаться
-          </a>
+          <div className="mt-7 flex w-full flex-col gap-3 sm:w-auto sm:flex-row sm:justify-center">
+            <a
+              href="#projects"
+              className="hero-btn-orange inline-flex w-full items-center justify-center rounded-xl px-6 py-3.5 text-base font-semibold sm:w-auto"
+            >
+              Посмотреть проекты
+            </a>
+            <a
+              href="#contact"
+              className="hero-btn-green inline-flex w-full items-center justify-center rounded-xl px-6 py-3.5 text-base font-semibold sm:w-auto"
+            >
+              Связаться
+            </a>
+          </div>
         </div>
       </div>
 

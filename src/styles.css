@@ -120,6 +120,8 @@
   --cta-green: oklch(0.75 0.18 155);
   --lilac: oklch(0.8 0.13 305);
   --lilac-muted: oklch(0.72 0.09 305);
+  --hero-red: oklch(0.62 0.24 25);
+
 }
 
 
@@ -264,9 +266,26 @@
   }
 }
 
+@utility hero-image-veil {
+  background: linear-gradient(
+    180deg,
+    color-mix(in oklab, var(--hero-bg) 55%, transparent),
+    color-mix(in oklab, var(--hero-bg) 20%, transparent) 45%,
+    color-mix(in oklab, var(--hero-bg) 75%, transparent)
+  );
+}
+
+@utility hero-text-red {
+  color: var(--hero-red);
+  text-shadow:
+    0 2px 18px oklch(0.12 0.03 265 / 85%),
+    0 0 26px color-mix(in oklab, var(--hero-red) 45%, transparent);
+}
+
 @utility hero-pulse {
   animation: hero-pulse 2s ease-in-out infinite;
 }
+
 
 @keyframes hero-pulse {
   0%,
