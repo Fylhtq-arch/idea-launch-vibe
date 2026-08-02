@@ -3,8 +3,8 @@ interface ProjectCardProps {
   description: string;
   tags: string[];
   preview: {
-    gradient: string;
-    icon: React.ReactNode;
+    image: string;
+    alt: string;
   };
 }
 
@@ -14,14 +14,13 @@ export function ProjectCard({ title, description, tags, preview }: ProjectCardPr
       <div className="project-glow-ring pointer-events-none absolute inset-0 rounded-3xl" />
 
       {/* Preview */}
-      <div
-        className="project-preview relative flex h-44 items-center justify-center overflow-hidden rounded-2xl sm:h-52"
-        style={{ background: preview.gradient }}
-      >
-        <div className="project-preview-grid pointer-events-none absolute inset-0 opacity-30" />
-        <div className="relative z-10 scale-110 transition-transform duration-300 group-hover:scale-125">
-          {preview.icon}
-        </div>
+      <div className="project-preview relative h-44 overflow-hidden rounded-2xl sm:h-52">
+        <img
+          src={preview.image}
+          alt={preview.alt}
+          loading="lazy"
+          className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
+        />
         <div className="project-preview-shine pointer-events-none absolute inset-0" />
       </div>
 
