@@ -59,6 +59,7 @@
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-ring: var(--sidebar-ring);
+  --color-hero-bg: var(--hero-bg);
   --color-hero-foreground: var(--hero-foreground);
   --color-hero-muted: var(--hero-muted);
   --color-hero-panel: var(--hero-panel);
@@ -284,6 +285,56 @@
 
 @utility hero-pulse {
   animation: hero-pulse 2s ease-in-out infinite;
+}
+
+@utility project-grid-bg {
+  background-image:
+    linear-gradient(var(--hero-border) 1px, transparent 1px),
+    linear-gradient(90deg, var(--hero-border) 1px, transparent 1px);
+  background-size: 56px 56px;
+  mask-image: linear-gradient(180deg, black 60%, transparent 100%);
+}
+
+@utility project-card {
+  box-shadow: 0 20px 60px -20px color-mix(in oklab, var(--neon) 25%, transparent);
+
+  &:hover {
+    border-color: color-mix(in oklab, var(--neon) 45%, var(--hero-border));
+    box-shadow: 0 24px 70px -18px color-mix(in oklab, var(--neon) 35%, transparent);
+    transform: translateY(-4px);
+  }
+}
+
+@utility project-glow-ring {
+  box-shadow: inset 0 1px 0 color-mix(in oklab, white 10%, transparent);
+}
+
+@utility project-preview-grid {
+  background-image:
+    linear-gradient(var(--hero-border) 1px, transparent 1px),
+    linear-gradient(90deg, var(--hero-border) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+@utility project-preview-shine {
+  background: linear-gradient(
+    120deg,
+    transparent 40%,
+    color-mix(in oklab, white 12%, transparent) 50%,
+    transparent 60%
+  );
+  opacity: 0;
+  transition: opacity 0.4s ease;
+
+  .project-card:hover & {
+    opacity: 1;
+  }
+}
+
+@utility project-tag {
+  background: color-mix(in oklab, var(--hero-panel) 70%, transparent);
+  color: var(--lilac-muted);
+  border: 1px solid var(--hero-border);
 }
 
 
