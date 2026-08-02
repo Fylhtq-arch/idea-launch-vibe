@@ -337,6 +337,44 @@
   border: 1px solid var(--hero-border);
 }
 
+@utility services-grid-bg {
+  background-image:
+    linear-gradient(var(--hero-border) 1px, transparent 1px),
+    linear-gradient(90deg, var(--hero-border) 1px, transparent 1px);
+  background-size: 56px 56px;
+  mask-image: radial-gradient(70% 60% at 50% 30%, black, transparent 85%);
+}
+
+@utility service-card {
+  box-shadow: 0 20px 50px -20px color-mix(in oklab, var(--neon) 18%, transparent);
+
+  &:hover {
+    border-color: color-mix(in oklab, var(--neon) 45%, var(--hero-border));
+    box-shadow: 0 24px 60px -18px color-mix(in oklab, var(--neon) 28%, transparent);
+    transform: translateY(-4px);
+  }
+}
+
+@utility service-glow-ring {
+  box-shadow: inset 0 1px 0 color-mix(in oklab, white 10%, transparent);
+}
+
+@utility service-icon-ring {
+  background: linear-gradient(
+    135deg,
+    color-mix(in oklab, var(--hero-panel) 90%, transparent),
+    color-mix(in oklab, var(--hero-bg) 80%, transparent)
+  );
+  border: 1px solid var(--hero-border);
+  box-shadow: 0 0 24px color-mix(in oklab, var(--neon) 25%, transparent);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+
+  .service-card:hover & {
+    box-shadow: 0 0 32px color-mix(in oklab, var(--neon) 45%, transparent);
+    transform: scale(1.05);
+  }
+}
+
 
 @keyframes hero-pulse {
   0%,

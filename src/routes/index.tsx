@@ -1,6 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Hero } from "@/components/hero/Hero";
 import { FeaturedProjects } from "@/components/projects/FeaturedProjects";
+import { Services } from "@/components/services/Services";
 
 const title = "Вайбкодинг-специалист — развитие бизнеса с помощью ИИ";
 const description =
@@ -25,6 +26,7 @@ function Index() {
     <>
       <Hero />
       <FeaturedProjects />
+      <Services />
     </>
   );
 }
