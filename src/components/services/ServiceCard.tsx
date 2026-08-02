@@ -1,12 +1,14 @@
+import { type LucideIcon } from "lucide-react";
+
 interface ServiceCardProps {
-  icon: string;
+  icon: LucideIcon;
   title: string;
   description: string;
   result: string;
 }
 
 export function ServiceCard({
-  icon,
+  icon: Icon,
   title,
   description,
   result,
@@ -15,8 +17,8 @@ export function ServiceCard({
     <article className="service-card group relative flex flex-col overflow-hidden rounded-3xl border border-hero-border bg-hero-panel/50 p-5 backdrop-blur-sm transition-all duration-300 sm:p-6">
       <div className="service-glow-ring pointer-events-none absolute inset-0 rounded-3xl" />
 
-      <div className="service-icon-ring relative mb-4 inline-flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl text-2xl sm:h-14 sm:w-14 sm:text-[26px]">
-        {icon}
+      <div className="service-icon-ring relative mb-4 inline-flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl text-lilac sm:h-14 sm:w-14">
+        <Icon className="h-6 w-6 sm:h-7 sm:w-7" strokeWidth={1.8} />
       </div>
 
       <h3 className="relative text-lg font-bold text-hero-foreground sm:text-xl">
