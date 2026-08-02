@@ -360,7 +360,11 @@
 }
 
 @utility service-icon-ring {
-  background: color-mix(in oklab, var(--hero-panel) 70%, transparent);
+  background: linear-gradient(
+    135deg,
+    color-mix(in oklab, var(--hero-panel) 90%, transparent),
+    color-mix(in oklab, var(--hero-bg) 80%, transparent)
+  );
   border: 1px solid var(--hero-border);
   box-shadow: 0 0 24px color-mix(in oklab, var(--neon) 25%, transparent);
   transition: box-shadow 0.3s ease, transform 0.3s ease;
