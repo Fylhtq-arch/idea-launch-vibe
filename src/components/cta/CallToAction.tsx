@@ -2,7 +2,7 @@ import { Mail, Send } from "lucide-react";
 
 export function CallToAction() {
   return (
-    <section className="relative w-full overflow-hidden bg-hero-bg py-16 sm:py-24">
+    <section id="contact" className="relative w-full overflow-hidden bg-hero-bg py-16 sm:py-24">
       <div className="cta-grid-bg pointer-events-none absolute inset-0 opacity-20" />
 
       <div className="relative mx-auto max-w-3xl px-4 sm:px-8">
