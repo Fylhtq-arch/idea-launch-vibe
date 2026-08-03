@@ -64,6 +64,8 @@
   --color-hero-muted: var(--hero-muted);
   --color-hero-panel: var(--hero-panel);
   --color-hero-border: var(--hero-border);
+  --color-hero-bg-top: var(--hero-bg-top);
+  --color-hero-bg-bottom: var(--hero-bg-bottom);
   --color-neon: var(--neon);
   --color-cta-orange: var(--cta-orange);
   --color-cta-green: var(--cta-green);
@@ -112,6 +114,8 @@
   /* Hero (AI neon) tokens */
   --hero-bg: oklch(0.17 0.045 260);
   --hero-bg-2: oklch(0.23 0.06 250);
+  --hero-bg-top: oklch(0.24 0.1 300);
+  --hero-bg-bottom: oklch(0.18 0.08 230);
   --hero-foreground: oklch(0.97 0.01 240);
   --hero-muted: oklch(0.75 0.03 245);
   --hero-panel: oklch(0.26 0.05 255);
@@ -175,9 +179,7 @@
 
 @utility hero-shell {
   font-family: var(--font-display);
-  background:
-    radial-gradient(120% 90% at 80% 10%, var(--hero-bg-2), transparent 60%),
-    linear-gradient(160deg, var(--hero-bg), oklch(0.14 0.04 265));
+  background: linear-gradient(180deg, var(--hero-bg-top), var(--hero-bg-bottom));
   color: var(--hero-foreground);
 }
 
