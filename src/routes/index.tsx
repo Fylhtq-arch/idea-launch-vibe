@@ -1,4 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { CallToAction } from "@/components/cta/CallToAction";
 import { Hero } from "@/components/hero/Hero";
 import { FeaturedProjects } from "@/components/projects/FeaturedProjects";
 import { Services } from "@/components/services/Services";
@@ -27,6 +28,7 @@ function Index() {
       <Hero />
       <FeaturedProjects />
       <Services />
+      <CallToAction />
     </>
   );
 }
