@@ -18,7 +18,7 @@ export function CallToAction() {
 
           <div className="relative z-10 mt-8 flex w-full flex-col gap-3 sm:flex-row sm:justify-center">
             <a
-              href="https://t.me/"
+              href="https://t.me/keza300"
               target="_blank"
               rel="noopener noreferrer"
               className="hero-btn-telegram inline-flex items-center justify-center gap-2 rounded-xl px-6 py-3 text-sm font-semibold sm:text-base"
@@ -27,7 +27,9 @@ export function CallToAction() {
               Написать в Telegram
             </a>
             <a
-              href="mailto:hello@example.com"
+              href="mailto:andrey.eglit1969@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
               className="hero-btn-email inline-flex items-center justify-center gap-2 rounded-xl px-6 py-3 text-sm font-semibold sm:text-base"
             >
               <Mail className="h-4 w-4" />
