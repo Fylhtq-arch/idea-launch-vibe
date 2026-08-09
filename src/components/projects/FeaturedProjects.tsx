@@ -1,7 +1,4 @@
 import { ProjectCard } from "./ProjectCard";
-import studyflowAsset from "@/assets/studyflow.png.asset.json";
-import neuroAsset from "@/assets/neuroanalytic.png.asset.json";
-import launchproAsset from "@/assets/launchpro.png.asset.json";
 
 const projects = [
   {
@@ -10,7 +7,7 @@ const projects = [
       "AI-платформа для персонализированного обучения. Адаптирует материал под темп и уровень каждого студента.",
     tags: ["React", "TypeScript", "OpenAI", "Supabase"],
     preview: {
-      image: studyflowAsset.url,
+      image: "/1.png",
       alt: "Иллюстрация вайбкодинга: разработчик, код и AI-куб",
     },
   },
@@ -20,7 +17,7 @@ const projects = [
       "AI-сервис для анализа данных. Превращает сырые таблицы в понятные инсайты и прогнозы для бизнеса.",
     tags: ["Python", "FastAPI", "Pandas", "OpenAI"],
     preview: {
-      image: neuroAsset.url,
+      image: "/2.png",
       alt: "Аналитический дашборд с графиками и цифровым лицом ИИ",
     },
   },
@@ -30,7 +27,7 @@ const projects = [
       "Лендинг для продукта. Быстрый запуск посадочной страницы с фокусом на конверсию и визуальный вау-эффект.",
     tags: ["Next.js", "Tailwind", "Figma", "Vercel"],
     preview: {
-      image: launchproAsset.url,
+      image: "/3.png",
       alt: "Иллюстрация запуска продукта: планшет и бумажные самолётики",
     },
   },
