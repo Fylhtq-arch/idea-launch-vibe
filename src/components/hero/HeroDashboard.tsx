@@ -29,10 +29,11 @@ export function HeroDashboard() {
             Развитие бизнеса с помощью ИИ
           </h1>
 
-          <p className="hero-text-red mx-auto mt-4 max-w-xl text-sm font-semibold leading-relaxed sm:text-base">
+          <p className="mx-auto mt-4 inline-block max-w-xl rounded-lg bg-hero-blue px-4 py-2 text-sm font-semibold leading-relaxed text-hero-foreground shadow-lg shadow-hero-blue/25 sm:text-base">
             Быстро и надежно с помощью ИИ делаем старт и развитие любых идей
             бизнеса
           </p>
+
 
           <div className="mt-7 flex w-full flex-col gap-3 sm:w-auto sm:flex-row sm:justify-center">
             <a
