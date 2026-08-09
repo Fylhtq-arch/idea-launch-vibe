@@ -69,8 +69,10 @@
   --color-neon: var(--neon);
   --color-cta-orange: var(--cta-orange);
   --color-cta-green: var(--cta-green);
+  --color-hero-blue: var(--hero-blue);
   --color-lilac: var(--lilac);
   --color-lilac-muted: var(--lilac-muted);
+
 
   --font-display: "Manrope", ui-sans-serif, system-ui, sans-serif;
 }
@@ -126,8 +128,10 @@
   --lilac: oklch(0.8 0.13 305);
   --lilac-muted: oklch(0.72 0.09 305);
   --hero-red: oklch(0.62 0.24 25);
+  --hero-blue: oklch(0.55 0.18 255);
 
 }
+
 
 
 
